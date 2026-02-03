@@ -1,0 +1,11 @@
+{
+  "setCompiler" : "g++",
+  "setFlags" : "-o",
+  "setFiles" : 
+  {
+    "setSrcFile" : "main.cpp",
+    "setExecFile" : "main"
+  },
+  "setLibs" : "",
+  "autoStart" : false
+}
