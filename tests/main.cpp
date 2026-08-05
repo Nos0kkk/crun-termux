@@ -1,6 +1,9 @@
+#include "print.hpp"
+// #include "sum.hpp"
 #include <iostream>
 
 int main() {
-  std::cout << "Hi faggot!" << std::endl;
-  return 0;
+    print("Hi faggot");
+    // sum(6, 7);
+    return 0;
 }

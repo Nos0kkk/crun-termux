@@ -6,7 +6,7 @@ _logo_
 
 # How to install?
 
-## build.sh
+<!-- ## build.sh
 ***debian/ubuntu/mint/kali/astra/...***
 ```shell
 ./build.sh --linux-debian
@@ -14,7 +14,7 @@ _logo_
 ***Termux (Android)***
 ```shell
 ./build.sh --android-termux
-```
+``` -->
 
 ## CMake
 ***all system***
@@ -23,24 +23,29 @@ _logo_
 mkdir build && cd build
 cmake ..
 make
+```
 
-# for move executable in dir 'bin'
-# ONLY LINUX
-cmake --build .. --target install
+## Simpile compiling
+```shell
+cd CRun
+g++ src/crun/*.cpp -o crun
 ```
 
 # Usage
 more information:
 
 ```bash
-crun --help
+crun [--help|-h]
 ```
 
 ***Template*** ```build.crun```:
 ```build.crun
 COMPILER=clang
-FLAGS={-g}
-SRC={myapp.cpp myapp2.cpp}
+OPTION={-g,-o}
+
+# the path start with source dir (where is build.crun)
+SRC={myapp.cpp,myapp2.cpp}
+
 EXEC=myapp
 LIBS={-lboost}
 ```
@@ -49,15 +54,24 @@ What and how?
 
 ```COMPILER``` - your compiler (`g++`, `gcc`, `clang`, `mingw`)
 
-```FLAGS``` - flags for compiling your project (flag '-o' put automatically)
+```OPTION``` - flags/options for compiling your project (flag '-o' put automatically)
 
-```SRC``` - Adding the source file with the code
+```SRC``` - Adding the source file with the code (The path start with source dir - where is build.crun)
 
 ```EXEC``` - Adding an executable file
 
 ```LIBS``` - Connection of libraries
+
+# New
+- Update parser
+- New parser CLI
+- Upadate analyze errors
+- New function
+- Update work with directories
+- write with zero XD
+
 # TODO:
-***build.sh:***
+<!-- ***build.sh:***
 - [x] debian
 - [x] ubuntu
 - [x] kali
@@ -66,7 +80,7 @@ What and how?
 - [ ] arch
 - [ ] fedora
 - [ ] void
-- [x] termux (android)
+- [x] termux (android) -->
 
 ***crun***
 - [x] start
@@ -75,3 +89,5 @@ What and how?
 - [ ] more function
 
 # Thank you <3
+> More information of develope in:
+> Telegram: https://tglink.me/BioNos0k

@@ -1,4 +1,5 @@
+# Test crun
 COMPILER=g++
-FLAGS={-g}
-SRC={main.cpp}
+OPTION={-Wall,-g,-o}
+SRC={main.cpp,print.cpp}
 EXEC=main

@@ -1,0 +1,12 @@
+#pragma once
+#include <iostream>
+#include <string>
+#include <filesystem>
+#include <regex>
+#include <thread>
+#include <chrono>
+#include <atomic>
+#include <cstdlib>
+#include <vector>
+#include "../../libs/headers/CLI11.hpp"
+#include "data.hpp"
